@@ -1,0 +1,25 @@
+<div id="project_bugs">
+<br>
+<br>
+
+	<table border="1" width="100%">
+	<tr>
+	<th>S.No</th>
+	<th>Project Name</th>
+	<th>Total Bugs</th>
+	<th>Total Bug Closed</th>
+	<th>Total Feature Requests</th>
+	<th>Total Feature Requests Closed</th>
+	</tr>
+	{% for(i=0;i<data.length;i++){ %}
+	<tr>
+	<td>{{ i+1 }}</td>
+	<td>{{ data[i][0] }}</td>
+	<td>{{ data[i][1] }}</td>
+	<td>{{ data[i][2] }}</td>
+	<td>{{ data[i][3] }} </td>
+	<td>{{ data[i][4] }}</td>
+	<td>{{ data[i][5] }}</td>
+	</tr>
+	{% } %}
+</div>
